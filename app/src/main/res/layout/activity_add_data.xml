@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.example.medhagupta.passwordmanager.AddData">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add new account"
+        android:id="@+id/buttonAddAccount"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:background="#FF4081"
+        android:padding="8dp"
+        android:textColor="#FFF3E0"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Accounts"
+        android:id="@+id/buttonViewAccounts"
+        android:layout_below="@+id/buttonAddAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:background="#FF4081"
+        android:padding="8dp"
+        android:textColor="#FFF3E0"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add notes"
+        android:id="@+id/buttonAddNotes"
+        android:layout_marginTop="67dp"
+        android:layout_below="@+id/buttonViewAccounts"
+        android:layout_alignRight="@+id/buttonViewNotes"
+        android:layout_alignEnd="@+id/buttonViewNotes"
+        android:background="#FF4081"
+        android:padding="8dp"
+        android:textColor="#FFF3E0"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Notes"
+        android:id="@+id/buttonViewNotes"
+        android:layout_marginTop="79dp"
+        android:layout_below="@+id/buttonAddNotes"
+        android:layout_centerHorizontal="true"
+        android:background="#FF4081"
+        android:padding="8dp"
+        android:textColor="#FFF3E0"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View readme file"
+        android:id="@+id/intStorage"
+        android:layout_marginTop="72dp"
+        android:layout_below="@+id/buttonViewNotes"
+        android:layout_centerHorizontal="true"
+        android:background="#FF4081"
+        android:padding="8dp"
+        android:textColor="#FFF3E0"
+        android:textSize="15sp"/>
+</RelativeLayout>
+</ScrollView>

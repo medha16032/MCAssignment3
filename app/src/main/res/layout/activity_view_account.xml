@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.medhagupta.passwordmanager.ViewAccount">
+
+    <TextView
+        android:id="@+id/accounts"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:text="Accounts"
+        android:textSize="30dp"
+        android:background="#e73a5e"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewAccountAccountName"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter the account name"
+        android:layout_below="@+id/accounts"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:id="@+id/viewAccountUsername"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:layout_below="@+id/viewAccountAccountName"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:ems="10"
+        android:id="@+id/viewAccountPassword"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/viewAccountUsername"
+        android:layout_alignLeft="@+id/viewAccountUsername"
+        android:layout_alignStart="@+id/viewAccountUsername" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/viewAccountSubmit"
+        android:layout_below="@+id/viewAccountPassword"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="#FF4081"
+        android:padding="8dp"
+        android:textColor="#FFF3E0"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/update"
+        android:layout_below="@+id/viewAccountSubmit"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#FF4081"
+        android:padding="8dp"
+        android:textColor="#FFF3E0"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/delete"
+        android:layout_below="@+id/update"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#FF4081"
+        android:padding="8dp"
+        android:textColor="#FFF3E0"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>
+</ScrollView>

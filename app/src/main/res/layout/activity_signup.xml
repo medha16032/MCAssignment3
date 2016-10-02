@@ -1,0 +1,74 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.example.medhagupta.passwordmanager.SignupActivity"
+    >
+
+    <TextView
+        android:id="@+id/signupPage"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:text="Sign up"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:background="#e73a5e"
+        android:textColor="#FFF3E0"
+        android:textStyle="bold"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupUsername"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="Enter username"
+        android:layout_below="@+id/signupPage"
+        android:layout_alignLeft="@+id/signupPassword"
+        android:layout_alignStart="@+id/signupPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupPassword"
+        android:hint="Enter password"
+        android:layout_below="@+id/signupUsername"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_marginTop="61dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmPassword"
+        android:hint="Confirm password"
+        android:ems="10"
+        android:layout_below="@+id/signupPassword"
+        android:layout_alignLeft="@+id/signupPassword"
+        android:layout_alignStart="@+id/signupPassword"
+        android:layout_marginTop="75dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:id="@+id/buttonCreateAccount"
+        android:layout_below="@+id/confirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:background="#FF4081"
+        android:padding="8dp"
+        android:textColor="#FFF3E0"
+        android:textSize="20sp"/>
+</RelativeLayout>
+</ScrollView>
